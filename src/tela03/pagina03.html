@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js"></script>
         <title>Tela 03</title>
     </head>
     <body>
         <!--Formulario 01-->
         <section>
-            <form>
+            <form action="/src/tela04/pagina04.html">
                 <!--Formulario para o status da conta do usuario-->
                 <section>
                     <label for="accountStatus">What is the status of your account?</label>
@@ -49,7 +50,18 @@
                         <label for="cryptocurrency">cryptocurrency market</label>
                     </p>
                 </section>
+                
+                <!--Botão de ação da pagina-->
+                <section>
+                    <button type="submit">Next</button>
+                </section>
             </form>
+
+            <!--Botões de navegação-->
+            <section>
+                <button onclick="retornar()">Back</button>
+                <button onclick="skipPagina()">Skip</button>
+            </section:>
         </section>
     </body>
 </html>
