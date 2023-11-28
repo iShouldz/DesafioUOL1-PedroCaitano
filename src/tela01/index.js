@@ -1,3 +1,3 @@
 function irParaOutraPagina() {
-    window.location.href = 'pagina02.html';
+    window.location.replace('/src/tela02/pagina02.html');
 }
