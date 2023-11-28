@@ -3,5 +3,5 @@ function irParaOutraPagina() {
 }
 
 function retornarHome(){
-    window.location.replace('/src/tela01/pagina01.html')
+    window.location.replace('/src/tela01/home.html')
 }
