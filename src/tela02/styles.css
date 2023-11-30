@@ -1,0 +1,71 @@
+body{
+    height: 760px;
+    width: 1280px;
+}
+
+#oneDefault{
+    width: 552.513px;
+    height: 480.015px;
+    padding: 146px 80px 134px 87.5px;
+    flex-shrink: 0;
+    gap: 80px;
+}
+
+.btn{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 35px;
+    background: #3EB25E;
+    width: 199px;
+    height: 35.554px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+  
+.btn:hover{
+    border-radius: 35px;
+    color: #000;
+    background: #FFFF7D;
+}
+  
+.h1{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+.h2{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+.textTela2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information{
+    padding: 50px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+}
