@@ -3,17 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        <link rel="stylesheet" href="styles.css">
         <script src="index.js"></script>
         <title>Document</title>
     </head>
 
     <body>
         <!--Formulario 2-->
-        <section>
+        <section class="form">
+            <img src="../assets/img/three.svg" alt="Super heroi com capa verde" id="threeDefault">
+
             <form action="/src/tela05/pagina05.html">
                 <!--Motivo do investimento-->
                 <section>
-                    <label for="motivoInvestimento">How do you decide to invest?</label>
+                    <label for="motivoInvestimento" class="label1 limpo">How do you decide to invest?</label>
                     <select name="motivoInvestimento" id="motivoInvestimento">
                         <option value="I have not invested yet">I have not invested yet</option>
                         <option value="Movimentar capital parado">I should like apply my money</option>
@@ -25,46 +29,55 @@
 
                 <!--Form para oq usou para estudar-->
                 <section>
-                    <label for="materialEstudo">What resources have you used or are you using for your training?</label>
+                    <label for="materialEstudo" class="label1 limpo">What resources have you used or are you using for your training?</label>
                     
                     <p>
                         <input 
                         type="checkbox" 
                         value="Books and articles" 
-                        id="material1">Books and articles
+                        id="material1"
+                        class="checkboox">
+                        <label for="material1" class="label-check">Books and articles</label>
                     </p>
 
                     <p>
                         <input 
                         type="checkbox" 
                         value="YouTube tutorial videos" 
-                        id="material2">YouTube tutorial videos
+                        id="material2"
+                        class="checkboox">
+                        <label for="material2" class="label-check">YouTube tutorial videos</label>
                     </p>
 
                     <p>
-                        <input type="checkbox" 
+                        <input 
+                        type="checkbox" 
                         value="online or face to fac courses" 
-                        id="material3">online or face to fac courses
+                        id="material3"
+                        class="checkboox">
+                        <label for="material3" class="label-check">online or face to fac courses</label>
                     </p>
                     
                     <p>
-                        <input type="checkbox"
-                         value="experience with little investment" 
-                         id="material3">experience with little investment
+                        <input 
+                        type="checkbox"
+                        value="experience with little investment" 
+                        id="material4"
+                        class="checkboox">
+                        <label for="material4" class="label-check">experience with little investment</label>
                     </p>
                 </section>
 
                 <!--Botão de ação-->
+                <section class="btns">
+                    <button type="submit" class="btn">Next</button>
+                    <button type="button" onclick="retornar()" class="btn">Back</button>
+                </section>
+
                 <section>
-                    <button type="submit">Next</button>
+                    <button onclick="skipPagina()" class="skipBtn">Skip</button>
                 </section>
             </form>
-        </section>
-
-        <!--Navegação-->
-        <section>
-            <button onclick="retornar()">Back</button>
-            <button onclick="skipPagina()">Skip</button>
         </section>
     </body>
 </html>     
