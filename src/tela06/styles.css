@@ -1,0 +1,105 @@
+body{
+    height: 760px;
+    width: 1280px;
+}
+
+#fiveDefault{
+    width: 552.513px;
+    height: 528.015px;
+    flex-shrink: 0;
+    padding: 98px 0px 134px 87.5px;
+    flex-shrink: 0;
+}
+
+.btn{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 35px;
+    background: #3EB25E;
+    width: 199px;
+    height: 35.554px;
+    flex-shrink: 0;
+    margin: 20px;
+}
+  
+.btn:hover{
+    border-radius: 35px;
+    color: #000;
+    background: #FFFF7D;
+}
+
+.skipBtn{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 35px;
+    background: #3EB25E;
+    width: 445px;
+    height: 36px;
+    flex-shrink: 0;
+    margin-left: 20px
+}
+
+.skipBtn:hover{
+    border-radius: 35px;
+    color: #000;
+    background: #FFFF7D;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.label1{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+input.age{
+    width: 70px;
+}
+
+input.age::placeholder{
+    text-align: center;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+input::placeholder{
+    font-size: 20px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.formInterno{
+    margin-left: 30px;
+}
