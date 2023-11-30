@@ -3,16 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        <link rel="stylesheet" href="styles.css">
         <script src="index.js"></script>
         <title>Tela 03</title>
     </head>
     <body>
         <!--Formulario 01-->
-        <section>
+        <section class="form">
+            <img src="../assets/two.svg" alt="Super heroi com capa verde" id="twoDefault">
+
             <form action="/src/tela04/pagina04.html">
                 <!--Formulario para o status da conta do usuario-->
                 <section>
-                    <label for="accountStatus">What is the status of your account?</label>
+                    <label for="accountStatus" class="label1 limpo">What is the status of your account?</label>
                     <select name="accountStatus" id="accountStatus">
                         <option value="I have not created an account yet">I have not created an account yet</option>
                         <option value="Ativa">I have a active account</option>
@@ -23,45 +27,44 @@
                 
                 <!--Formulario para o mercado financeiro que o usuario opera-->
                 <section>
-                    <label for="operateMarket">In which financial markets do you operate?</label>
+                    <label for="operateMarket" class="label1 limpo">In which financial markets do you operate?</label>
 
                     <p>
                         <input type="radio" id="stock" name="operateMarket" value="stock market">
-                        <label for="stock">stock market</label>
+                        <label for="stock" class="label-radio">stock market</label>
                     </p>
 
                     <p>
                         <input type="radio" id="foreign" name="operateMarket" value="foreign exchange">
-                        <label for="foreign">foreign exchange</label>
+                        <label for="foreign" class="label-radio">foreign exchange</label>
                     </p>
                     
                     <p>
                         <input type="radio" id="commodity" name="operateMarket" value="commodity">
-                        <label for="commodity">commodity</label>
+                        <label for="commodity" class="label-radio">commodity</label>
                     </p>
                     
                     <p>
                         <input type="radio" id="bond market" name="operateMarket" value="bond market">
-                        <label for="bond market">bond market</label>
+                        <label for="bond market" class="label-radio">bond market</label>
                     </p>
                     
                     <p>
                         <input type="radio" id="cryptocurrency" name="operateMarket" value="cryptocurrency market">
-                        <label for="cryptocurrency">cryptocurrency market</label>
+                        <label for="cryptocurrency" class="label-radio">cryptocurrency market</label>
                     </p>
                 </section>
                 
                 <!--Botão de ação da pagina-->
+                <section class="btns">
+                    <button type="button" onclick="retornar()" class="btn">Back</button>
+                    <button type="submit" class="btn">Next</button>
+                </section>
+                
                 <section>
-                    <button type="submit">Next</button>
+                    <button onclick="skipPagina()" class="skipBtn">Skip</button>
                 </section>
             </form>
-        </section>
-
-        <!--Botões de navegação-->
-        <section>
-            <button onclick="retornar()">Back</button>
-            <button onclick="skipPagina()">Skip</button>
         </section>
     </body>
 </html>
