@@ -3,19 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        <link rel="stylesheet" href="styles.css">
         <script src="index.js"></script>
         <title>Document</title>
     </head>
     <body>
         <!--Formulario 3-->
-        <section>
+        <section class="form">
+            <img src="../assets/img/four.svg" alt="Super heroi com capa verde" id="fourDefault">
+
             <form>
                 <!--Se alguem proximo perdeu dinheiro investindo-->
                 <section>
-                    <label for="detalhesPerca">
+                    <label for="detalhesPerca" class="label1">
                         If you or someone closee to you has already made a loss on 
                         the investiment, white down the details</label>
-
                     <p>
                         <textarea id="detalhesPerca" maxlength="130" required></textarea>
                     </p>
@@ -23,15 +26,14 @@
 
                 <!--Botão de ação-->
                 <section>
-                    <button type="submit">Next</button>
+                    <button type="submit" class="btn">Next</button>
+                    <button onclick="retornar()" class="btn">Back</button>
+                </section>
+
+                <section>
+                    <button onclick="skipPagina()" class="skipBtn">Skip</button>
                 </section>
             </form>
-        </section>
-
-        <!--Botões de navegação-->
-        <section>
-            <button onclick="retornar()">Back</button>
-            <button onclick="skipPagina()">Skip</button>
         </section>
     </body>
 </html>
