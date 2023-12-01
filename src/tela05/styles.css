@@ -1,14 +1,14 @@
 body{
-    height: 760px;
-    width: 1280px;
-}
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 #fourDefault{
-    width: 552.513px;
-    height: 528.015px;
-    flex-shrink: 0;
-    padding: 98px 0px 134px 87.5px;
-    flex-shrink: 0;
+    max-width: 431px;
+    height: 100%;
+    width: 100%;
 }
 
 .btn{
@@ -24,7 +24,10 @@ body{
     width: 199px;
     height: 35.554px;
     flex-shrink: 0;
-    margin: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
 }
   
 .btn:hover{
@@ -46,7 +49,10 @@ body{
     width: 445px;
     height: 36px;
     flex-shrink: 0;
-    margin-left: 20px
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    margin: 0;
 }
 
 .skipBtn:hover{
@@ -55,12 +61,22 @@ body{
     background: #FFFF7D;
 }
 
+.form_css{
+    max-width: 38%;
+}
+
 .form{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 100px;
-    
+    justify-content: center;
+}
+
+.btns{
+    display: flex;
+    gap: 47px;
+    margin: 0;
 }
 
 .label1{
@@ -78,16 +94,70 @@ textarea{
     height: 225px;
     flex-shrink: 0;
     border-radius: 20px;
+    max-width: 102%;
+    padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 480px) {
-    #fourDefault{
-        width: 75.11vw;
-        height: 50.22vh;
-        padding-right: 80px;
-        flex-shrink: 0;
-        padding: 0;
+
+#textareaRestante{
+    color: #3EB25E;
+}
+
+@media screen and (max-width: 768px) {
+    #fiveDefault{
+        width: 80vw;
+        padding-top: 20px;
     }
+
+    body{
+        display: flex;
+    }
+
+    .form_css{
+        max-width: 80%;
+    }
+    
+    .divimg{
+        padding: 10px;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 110%;
+        padding-top: 20px;
+        gap: 0;
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        margin: 0;
+    }
+
+    .btn{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .btnSkip{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .skipBtn{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+
+@media screen and (max-width: 480px) {
 
     body{
         display: flex;
@@ -169,6 +239,7 @@ textarea{
 
     .btns{
         display: flex;
+        gap: 8px;
         justify-content: center;
     }
 
@@ -220,5 +291,6 @@ textarea{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
 }
