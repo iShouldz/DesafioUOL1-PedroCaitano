@@ -1,16 +1,20 @@
 body{
-    height: 760px;
-    width: 1280px;
+    min-height: 100vh;
     display: flex;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
 #oneDefault{
-    width: 552.513px;
-    height: 480.015px;
-    padding: 146px 80px 134px 87.5px;
-    flex-shrink: 0;
-    gap: 80px;
+    max-width: 431px;
+    height: 100%;
+    width: 100%;
 }
+
+.divimg{
+     display: flex;
+     justify-content: center;
+  }
 
 .btn{
     color: #FFF;
@@ -26,6 +30,8 @@ body{
     height: 35.554px;
     flex-shrink: 0;
     margin: 20px;
+    border: none;
+    outline: none;
 }
   
 .btn:hover{
@@ -57,91 +63,75 @@ body{
 }
 
 .textTela2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  gap: 80px;
 }
 
 .information{
-    padding: 50px;
-}
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 31%;
+  }
 .btns{
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    #oneDefault{
+      padding-top: 80px;
+      width: 80vw;
+    }
+
+    body{
+        display: flex;
+    }
+
+    .information{
+        max-width: 80%;
+    }
+
+    .textTela2{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .divimg{
+        padding: 10px;
+    }
+  }
+  
 
 @media screen and (max-width: 480px) {
     body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
     
-
     .textTela2{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
+        padding: 0;
     }
     
-    #oneDefault{
-        width: 75.11vw;
-        height: 50.22vh;
-        padding-right: 80px;
-        flex-shrink: 0;
-        padding: 0;
+    .btns{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .information{
         padding: 0;
         max-width: 66%;
-    }
-
-    .h2{
-        color: #000;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        flex-shrink: 0;
-    }
-
-    .h1{
-        color: #000;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        flex-shrink: 0;
-    }
-
-    .btn{
-        color: #FFF;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        border-radius: 35px;
-        background: #3EB25E;
-        width: 142px;
-        height: 26px;
-        flex-shrink: 0;
-        margin: 20px;
-    }
-      
-    .btn:hover{
-        border-radius: 35px;
-        color: #000;
-        background: #FFFF7D;
     }
 }
