@@ -14,7 +14,7 @@
         <section class="form">
             <img src="../assets/img/three.svg" alt="Super heroi com capa verde" id="threeDefault">
 
-            <form action="/src/tela05/pagina05.html">
+            <form action="/src/tela05/pagina05.html" class="form_css">
                 <!--Motivo do investimento-->
                 <section>
                     <label for="motivoInvestimento" class="label1 limpo">How do you decide to invest?</label>
@@ -70,11 +70,11 @@
 
                 <!--Botão de ação-->
                 <section class="btns">
-                    <button type="submit" class="btn">Next</button>
                     <button type="button" onclick="retornar()" class="btn">Back</button>
+                    <button type="submit" class="btn">Next</button>
                 </section>
 
-                <section>
+                <section class="btnSkip">
                     <button onclick="skipPagina()" class="skipBtn">Skip</button>
                 </section>
             </form>
