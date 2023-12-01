@@ -8,15 +8,20 @@
     <script src="index.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="exibirNomeCadastro()">
     <!--Logo-->
-    <section class="sucess">
-        <img src="/src/assets/img/compassFallout.png" id="sucessFallout">
+    <section class="textHome">
+        <div class="divimg">
+            <img src="/src/assets/img/compassFallout.png" id="sucessFallout">
+        </div>
 
-        <section class="BTN">
+        <section class="information">
             <h1 id="h1">Sucess!</h1>
             
-            <button class="btn">Go to home</button>
+            <div id="nomeCadastro">
+
+            </div>
+            <button class="btn" onclick="irParaOutraPagina()">Go to home</button>
         </section>
     </section>
 </body>
