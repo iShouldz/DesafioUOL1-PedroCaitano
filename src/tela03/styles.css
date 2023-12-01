@@ -8,7 +8,6 @@ body{
     height: 528.015px;
     flex-shrink: 0;
     padding: 98px 0px 134px 87.5px;
-    flex-shrink: 0;
 }
 
 .btn{
@@ -135,9 +134,151 @@ input[type="radio"]:checked + label::before{
     position: static; 
     padding-left: 0; 
     margin-right: 0; 
-    font-size: 26px; 
 }
   
 .label1.limpo::before {
     content: none; 
+}
+
+@media screen and (max-width: 480px) {
+    #twoDefault{
+        width: 75.11vw;
+        height: 50.22vh;
+        padding-right: 80px;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    p{
+        margin: 0;
+    }
+    
+    select{
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 10px; 
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    label{
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 15px;
+        font-size: 13px;
+    }
+    
+    label:before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        
+        border-radius:100%;
+        margin-right: 200px;
+        position: absolute;
+        bottom: 0rem;
+        background-image: url(../assets/icons/RadioOff.svg);
+    }
+    
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 110%;
+        gap: 0;
+    }
+
+    .form_css{
+        max-width: 66%;
+    }
+
+    .label-radio{
+        color: #000;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px; 
+    }
+
+    .label1.limpo {
+        color: #000;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        display: inline; 
+        cursor: auto;
+        position: static; 
+        padding-left: 0; 
+        margin-right: 0; 
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 35px;
+        background: #3EB25E;
+        width: 142px;
+        height: 26px;
+        flex-shrink: 0;
+        margin: 0;
+        margin: 10px 6px 6px 10px;
+    }
+
+    .btn:hover{
+        border-radius: 35px;
+        color: #000;
+        background: #FFFF7D;
+    }
+      
+    .skipBtn{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 35px;
+        background: #3EB25E;
+        width: 302px;
+        height: 26px;
+        margin: 0;
+    }
+
+    .skipBtn:hover{
+        border-radius: 35px;
+        color: #000;
+        background: #FFFF7D;
+    }
+     
+    .btnSkip{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
