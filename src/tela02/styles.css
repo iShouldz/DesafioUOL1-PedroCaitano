@@ -1,6 +1,7 @@
 body{
     height: 760px;
     width: 1280px;
+    display: flex;
 }
 
 #oneDefault{
@@ -68,4 +69,79 @@ body{
 .btns{
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+
+    .textTela2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    
+    #oneDefault{
+        width: 75.11vw;
+        height: 50.22vh;
+        padding-right: 80px;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    .information{
+        padding: 0;
+        max-width: 66%;
+    }
+
+    .h2{
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        flex-shrink: 0;
+    }
+
+    .h1{
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        flex-shrink: 0;
+    }
+
+    .btn{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 35px;
+        background: #3EB25E;
+        width: 142px;
+        height: 26px;
+        flex-shrink: 0;
+        margin: 20px;
+    }
+      
+    .btn:hover{
+        border-radius: 35px;
+        color: #000;
+        background: #FFFF7D;
+    }
 }
