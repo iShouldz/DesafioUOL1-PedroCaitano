@@ -11,16 +11,22 @@
     <body>
         <!--Formulario 3-->
         <section class="form">
-            <img src="../assets/img/four.svg" alt="Super heroi com capa verde" id="fourDefault">
+            <div class="divimg">
+                <img src="../assets/img/four.svg" alt="Super heroi com capa verde" id="fourDefault">
 
-            <form class="form_css">
+            </div>
+
+            <form action="/src/tela06/pagina06.html" class="form_css">
                 <!--Se alguem proximo perdeu dinheiro investindo-->
                 <section>
                     <label for="detalhesPerca" class="label1">
                         If you or someone closee to you has already made a loss on 
                         the investiment, white down the details</label>
                     <p>
-                        <textarea id="detalhesPerca" maxlength="130" required></textarea>
+                        <textarea id="detalhesPerca" maxlength="130" oninput="atualizarContador()" required></textarea>
+                        <div id="textareaRestante">
+                            130 caracteres restantes
+                        </div>
                     </p>
                 </section>
 
