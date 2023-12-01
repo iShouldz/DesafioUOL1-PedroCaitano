@@ -11,7 +11,6 @@ function pegarCadastroURL() {
         var par = pares[i].split('=');
         parametros[par[0]] = decodeURIComponent(par[1]);
     }
-
     return parametros;
 }
 
