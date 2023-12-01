@@ -1,13 +1,14 @@
 body{
-    height: 760px;
-    width: 1280px;
-}
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 #twoDefault{
-    width: 552.513px;
-    height: 528.015px;
-    flex-shrink: 0;
-    padding: 98px 0px 134px 87.5px;
+    max-width: 431px;
+    height: 100%;
+    width: 100%;
 }
 
 .btn{
@@ -23,7 +24,8 @@ body{
     width: 199px;
     height: 35.554px;
     flex-shrink: 0;
-    margin: 20px;
+    border: none;
+    outline: none;
 }
   
 .btn:hover{
@@ -45,7 +47,8 @@ body{
     width: 445px;
     height: 36px;
     flex-shrink: 0;
-    margin-left: 20px
+    border: none;
+    outline: none;
 }
 
 .skipBtn:hover{
@@ -54,14 +57,34 @@ body{
     background: #FFFF7D;
 }
 
-.form{
+.btns{
     display: flex;
     flex-direction: row;
+    flex-wrap: none;
     align-items: center;
-    gap: 100px;
+    justify-content: center;
+    gap: 49px;
+    padding-bottom: 20px;
+}
+
+.form_css{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    gap: 80px;
 }
 
 .label1{
+    display: flex;
     color: #000;
     text-align: center;
     font-family: Roboto;
@@ -84,9 +107,12 @@ body{
 select{
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    padding: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 10px;
     font-size: 27px;
-    max-width: 100%;
+    max-width: 90%;-webkit-appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -135,6 +161,7 @@ input[type="radio"]:checked + label::before{
 }
 
 .label1.limpo {
+    display: flex;
     color: #000;
     text-align: center;
     font-size: 26px;
@@ -143,7 +170,6 @@ input[type="radio"]:checked + label::before{
     line-height: normal;
     gap: 20px;
     
-    display: inline; 
     cursor: auto;
     position: static; 
     padding-left: 0; 
@@ -154,19 +180,61 @@ input[type="radio"]:checked + label::before{
     content: none; 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     #twoDefault{
-        width: 75.11vw;
-        height: 50.22vh;
-        padding-right: 80px;
-        flex-shrink: 0;
-        padding: 0;
+        width: 80vw;
+        padding-top: 20px;
     }
 
     body{
         display: flex;
+    }
+
+    .form_css{
+        max-width: 80%;
+    }
+
+    .textTela2{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .divimg{
+        padding: 10px;
+    }
+
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 110%;
+        gap: 0;
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+    }
+    .btnSkip{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .skipBtn{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+
+@media screen and (max-width: 480px) {
+    body{
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -214,7 +282,8 @@ input[type="radio"]:checked + label::before{
     }
 
     .form_css{
-        max-width: 66%;
+        max-width: 80%;
+        align-items: center;
     }
 
     .label-radio{
@@ -244,6 +313,7 @@ input[type="radio"]:checked + label::before{
     .btns{
         display: flex;
         justify-content: center;
+        gap: 0;
     }
 
     .btn{
@@ -270,6 +340,7 @@ input[type="radio"]:checked + label::before{
     }
       
     .skipBtn{
+        margin: 0;
         color: #FFF;
         text-align: center;
         font-family: Roboto;
