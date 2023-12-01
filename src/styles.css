@@ -68,3 +68,53 @@ h1,h2,p{
   color: #000;
   background: #FFFF7D;
 }
+
+@media screen and (max-width: 480px){
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #zeroDefault{
+    width: 60.11vw;
+    height: 60.22vh;
+    padding-right: 100px;
+    flex-shrink: 0;
+  }
+
+  .textHome {
+    padding: 0;
+    gap: 0;
+  }
+
+  .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #h1{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #h2{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  
+}
