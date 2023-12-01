@@ -1,7 +1,3 @@
-# COMPASS UOL
+![redme](src/assets/img/readmeCompass1.png)
 
-## Projeto 1
-> Projeto em desenvolvimento com as tecnologias:
- * HTML
- * CSS
- * JavaScript 
+
