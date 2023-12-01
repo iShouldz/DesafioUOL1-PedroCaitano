@@ -80,3 +80,145 @@ textarea{
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 480px) {
+    #fourDefault{
+        width: 75.11vw;
+        height: 50.22vh;
+        padding-right: 80px;
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    p{
+        margin: 0;
+    }
+    
+    select{
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        padding: 10px; 
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+        height: 131px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .checkboox {
+        display: none;
+    }
+    .checkboox + label:before {
+        content: '';
+        display: inline-block;
+        width: 13.81px;
+        height: 13.81px;
+        border-radius: 3px;
+        margin-right: 5px;
+        bottom: 0.2em;
+        left: 0px;
+        background-image: url(../assets/icons/CheckOff.svg);
+        margin-bottom: -2px;
+    }
+    
+    .checkboox:checked + label:before {
+        background-image: url(../assets/icons/CheckOn.svg);
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 110%;
+        gap: 0;
+    }
+
+    .form_css{
+        max-width: 66%;
+    }
+
+    .label-check{
+        color: #000;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 15px; 
+    }
+
+    .label1{
+        color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .btns{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 35px;
+        background: #3EB25E;
+        width: 142px;
+        height: 26px;
+        flex-shrink: 0;
+        margin: 0;
+        margin: 10px 6px 6px 10px;
+    }
+
+    .btn:hover{
+        border-radius: 35px;
+        color: #000;
+        background: #FFFF7D;
+    }
+      
+    .skipBtn{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 35px;
+        background: #3EB25E;
+        width: 302px;
+        height: 26px;
+        margin: 0;
+    }
+
+    .skipBtn:hover{
+        border-radius: 35px;
+        color: #000;
+        background: #FFFF7D;
+    }
+     
+    .btnSkip{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
